@@ -4,7 +4,7 @@
     $conn=@mysqli_connect("localhost","root","");
     if(!$conn){echo "数据库服务器连接失败！"; exit();}
     //2.打开数据库
-    mysqli_select_db($conn,"deng") or die("数据库打开失败");
+    mysqli_select_db($conn,"li") or die("数据库打开失败");
     mysqli_query($conn,"set names utf8");  //设置字符编写，解决汉字乱码
     //3.获取用户填写的用户名和密码
     $uname=$_POST["username"];  //获取表单中的用户名
